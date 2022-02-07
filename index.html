@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto:wght@100;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="home.css" />
+        <link rel="icon" href="./images/calculator.png" />
+    </head>
+    <body>
+        <div id="calculatorContainer">
+            <div id="displayContainer">
+                <div id="result">
+                    <p class="data"></p>
+                </div>
+                <div id="history">
+                    <p class="data"></p>
+                </div>
+                <div id="compute">
+                    <p class="data"></p>
+                </div>
+            </div>
+            <div id="buttonsContainer">
+                <div class="button operator" data-value="AC">
+                    <div>AC</div>
+                </div>
+                <div class="button operator" data-value="C">
+                    <div>C</div>
+                </div>
+                <div class="button operator" data-value="inverse">
+                    <div>1/x</div>
+                </div>
+                <div class="button operator" data-value="/"><div>/</div></div>
+                <div class="button operator" data-value="signChange">
+                    <div>+/-</div>
+                </div>
+
+                <div class="button number" data-value="7"><div>7</div></div>
+                <div class="button number" data-value="8"><div>8</div></div>
+                <div class="button number" data-value="9"><div>9</div></div>
+                <div class="button operator" data-value="*"><div>×</div></div>
+
+                <div class="button operator" data-value="percentage">
+                    <div>%</div>
+                </div>
+
+                <div class="button number" data-value="4"><div>4</div></div>
+                <div class="button number" data-value="5"><div>5</div></div>
+                <div class="button number" data-value="6"><div>6</div></div>
+                <div class="button operator" data-value="-"><div>-</div></div>
+
+                <div class="button operator" data-value="**">
+                    <div>^</div>
+                </div>
+
+                <div class="button number" data-value="1"><div>1</div></div>
+                <div class="button number" data-value="2"><div>2</div></div>
+                <div class="button number" data-value="3"><div>3</div></div>
+                <div class="button operator" data-value="+"><div>+</div></div>
+
+                <div class="button operator" data-value="sqrt">
+                    <div>√</div>
+                </div>
+
+                <div class="button number" data-value="0"><div>0</div></div>
+                <div class="button number" data-value="."><div>.</div></div>
+                <div class="button operator" data-value="sqr">
+                    <div>sqr</div>
+                </div>
+                <div class="button operator" data-value="cube">
+                    <div>cube</div>
+                </div>
+
+                <div class="button operator" data-value="="><div>=</div></div>
+            </div>
+        </div>
+        <script src="home.js"></script>
+    </body>
+</html>

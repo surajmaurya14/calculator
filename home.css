@@ -1,0 +1,102 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif; */
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 96vh;
+    border-radius: 8px;
+    min-width: 240px;
+    min-height: 240px;
+}
+#calculatorContainer {
+    margin: auto;
+    background-color: honeydew;
+    width: 32%;
+    height: 100%;
+    box-shadow: 0px 0px 2px 2px tan;
+}
+#buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 64%;
+}
+
+#displayContainer {
+    font-family: "Roboto", sans-serif;
+    height: 36%;
+    text-align: right;
+}
+.button {
+    text-align: center;
+    width: 20%;
+    height: 20%;
+    background-color: papayawhip;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+#buttonsContainer :active {
+    font-size: small;
+    background-color: peachpuff;
+}
+
+.operator {
+    background-color: bisque;
+}
+
+#history,
+#compute,
+#result {
+    padding: 8px;
+    overflow: scroll;
+    box-sizing: border-box;
+}
+#result {
+    height: 40%;
+}
+#history {
+    height: 30%;
+}
+#compute {
+    height: 30%;
+    font-size: large;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#history::-webkit-scrollbar,
+#compute::-webkit-scrollbar,
+#result::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#history,
+#compute,
+#result {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+@media screen and (max-height: 1366px) and (max-width: 1366px) {
+    body {
+        height: 88vh;
+    }
+    #calculatorContainer {
+        width: 32%;
+    }
+}
+@media screen and (max-height: 1367px) and (max-width: 1367px) {
+    #calculatorContainer {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .button > div {
+        font-size: small;
+    }
+}
